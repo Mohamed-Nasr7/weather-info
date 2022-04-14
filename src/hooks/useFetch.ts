@@ -6,7 +6,9 @@ const useFetch = (url: string) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getData = async () => {};
+    const getData = async () => {
+      const response = await fetch(url);
+    };
     getData();
   }, [url]);
 };
