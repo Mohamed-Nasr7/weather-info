@@ -3,7 +3,12 @@ import CountriesDropdown from './countries-dropdown';
 import WeatherInfo from './weather-info';
 
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CountriesDropdown />
+      <WeatherInfo />
+    </div>
+  );
 };
 
 export default App;
