@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
 
-const useFetch = () => {};
+const useFetch = (url: string) => {};
 
 export default useFetch;
