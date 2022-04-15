@@ -3,6 +3,7 @@ import useFetch from '../../hooks/useFetch';
 import { countriesUrl } from '../../constants/urls';
 
 const CountriesDropdown = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as any[];
 
