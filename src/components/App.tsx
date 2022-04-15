@@ -3,11 +3,11 @@ import CountriesDropdown from './countries-dropdown';
 import WeatherInfo from './weather-info';
 
 const App = () => {
-  const [countryLatLong, setCountryLatLong] = useState([]);
+  const [countryCoordinates, setCountryCoordinates] = useState<object>({});
 
   return (
     <div>
-      <CountriesDropdown setCountryLatLong={setCountryLatLong} />
+      <CountriesDropdown setCountryCoordinates={setCountryCoordinates} />
       <WeatherInfo />
     </div>
   );
