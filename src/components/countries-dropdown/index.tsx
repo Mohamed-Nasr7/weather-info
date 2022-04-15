@@ -4,6 +4,7 @@ import { countriesUrl } from '../../constants/urls';
 
 const CountriesDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as any[];
 
