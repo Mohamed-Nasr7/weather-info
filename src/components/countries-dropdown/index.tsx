@@ -5,6 +5,10 @@ import { countriesUrl } from '../../constants/urls';
 type Props = {
   setCountryLatLong: (latlong: []) => void;
 };
+type Country = {
+  name: { common: string };
+  latlng: [];
+};
 
 const CountriesDropdown = ({ setCountryLatLong }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +34,7 @@ const CountriesDropdown = ({ setCountryLatLong }: Props) => {
       {isOpen && data && (
         <ul className='dropdown__menu'>
           {countries.map(item => (
-            <li key={item.cca3} onClick={() => selectCountry(item.name.common)}>
+            <li key={item.cca3} onClick={() => selectCountry(item)}>
               {item.name.common}
             </li>
           ))}
