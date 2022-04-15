@@ -7,7 +7,9 @@ const CountriesDropdown = () => {
 
   return (
     <div className='dropdown'>
-      <button className='dropdown__button'>Select a country</button>
+      <button className='dropdown__button' disabled={isLoading}>
+        Select a country
+      </button>
       <ul className='dropdown__menu'></ul>
     </div>
   );
