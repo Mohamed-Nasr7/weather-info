@@ -26,17 +26,14 @@ const CountriesDropdown = ({ setCountryLatLong }: Props) => {
       >
         {countryName || 'Select a country'}
       </button>
-      {isOpen && (
+
+      {isOpen && data && (
         <ul className='dropdown__menu'>
-          {data &&
-            countries.map(item => (
-              <li
-                key={item.cca3}
-                onClick={() => selectCountry(item.name.common)}
-              >
-                {item.name.common}
-              </li>
-            ))}
+          {countries.map(item => (
+            <li key={item.cca3} onClick={() => selectCountry(item.name.common)}>
+              {item.name.common}
+            </li>
+          ))}
         </ul>
       )}
     </div>
