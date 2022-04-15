@@ -12,10 +12,12 @@ const CountriesDropdown = () => {
       <button className='dropdown__button' disabled={isLoading}>
         Select a country
       </button>
-      <ul className='dropdown__menu'>
-        {data &&
-          countries.map(item => <li key={item.cca3}>{item.name.common}</li>)}
-      </ul>
+      {isOpen && (
+        <ul className='dropdown__menu'>
+          {data &&
+            countries.map(item => <li key={item.cca3}>{item.name.common}</li>)}
+        </ul>
+      )}
     </div>
   );
 };
