@@ -3,14 +3,14 @@ import useFetch from '../../hooks/useFetch';
 import { countriesUrl } from '../../constants/urls';
 
 type Props = {
-  setCountryLatLong: (latlong: []) => void;
+  setCountryCoordinates: React.Dispatch<React.SetStateAction<object>>;
 };
 type Country = {
   name: { common: string };
   latlng: [];
 };
 
-const CountriesDropdown = ({ setCountryLatLong }: Props) => {
+const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
