@@ -4,9 +4,9 @@ import { countriesUrl } from '../../constants/urls';
 const CountriesDropdown = () => {
   const { data, isLoading, error } = useFetch(countriesUrl);
   return (
-    <div>
-      <div></div>
-      <ul></ul>
+    <div className='dropdown'>
+      <button className='dropdown__button'></button>
+      <ul className='dropdown__menu'></ul>
     </div>
   );
 };
