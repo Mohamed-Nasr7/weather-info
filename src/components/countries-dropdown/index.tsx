@@ -8,6 +8,11 @@ const CountriesDropdown = () => {
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as any[];
 
+  const selectCountry = (country: string) => {
+    setCountryName(country);
+    setIsOpen(false);
+  };
+
   return (
     <div className='dropdown'>
       <button
