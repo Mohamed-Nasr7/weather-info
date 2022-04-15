@@ -7,7 +7,7 @@ const CountriesDropdown = () => {
 
   return (
     <div className='dropdown'>
-      <button className='dropdown__button'></button>
+      <button className='dropdown__button'>Select a country</button>
       <ul className='dropdown__menu'></ul>
     </div>
   );
