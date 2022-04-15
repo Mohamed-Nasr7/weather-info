@@ -15,7 +15,7 @@ const CountriesDropdown = () => {
         disabled={isLoading}
         onClick={() => setIsOpen(isOpen => !isOpen)}
       >
-        Select a country
+        {countryName || 'Select a country'}
       </button>
       {isOpen && (
         <ul className='dropdown__menu'>
