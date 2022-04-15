@@ -6,7 +6,7 @@ type Props = {
   setCountryLatLong: (latlong: []) => void;
 };
 
-const CountriesDropdown = () => {
+const CountriesDropdown = ({ setCountryLatLong }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
