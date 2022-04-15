@@ -9,7 +9,11 @@ const CountriesDropdown = () => {
 
   return (
     <div className='dropdown'>
-      <button className='dropdown__button' disabled={isLoading}>
+      <button
+        className='dropdown__button'
+        disabled={isLoading}
+        onClick={() => setIsOpen(isOpen => !isOpen)}
+      >
         Select a country
       </button>
       {isOpen && (
