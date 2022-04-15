@@ -7,7 +7,7 @@ type Props = {
 };
 type Country = {
   name: { common: string };
-  latlng: [];
+  latlng: number[];
 };
 
 const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
