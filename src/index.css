@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 6% 9%;
   min-height: 100vh;
+  background: linear-gradient(45deg, #a1c4fd 0%, #cbebfa 100%);
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
