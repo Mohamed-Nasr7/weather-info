@@ -25,7 +25,14 @@ const CountriesDropdown = () => {
       {isOpen && (
         <ul className='dropdown__menu'>
           {data &&
-            countries.map(item => <li key={item.cca3}>{item.name.common}</li>)}
+            countries.map(item => (
+              <li
+                key={item.cca3}
+                onClick={() => selectCountry(item.name.common)}
+              >
+                {item.name.common}
+              </li>
+            ))}
         </ul>
       )}
     </div>
