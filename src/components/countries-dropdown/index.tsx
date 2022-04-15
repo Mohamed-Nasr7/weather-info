@@ -3,6 +3,8 @@ import { countriesUrl } from '../../constants/urls';
 
 const CountriesDropdown = () => {
   const { data, isLoading, error } = useFetch(countriesUrl);
+  const countries = data as any[];
+
   return (
     <div className='dropdown'>
       <button className='dropdown__button'></button>
