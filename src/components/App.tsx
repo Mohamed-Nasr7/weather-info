@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div>
-      <CountriesDropdown />
+      <CountriesDropdown setCountryLatLong={setCountryLatLong} />
       <WeatherInfo />
     </div>
   );
