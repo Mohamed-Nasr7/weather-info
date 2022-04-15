@@ -19,6 +19,11 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const selectCountry = (country: Country) => {
     setCountryName(country.name.common);
     setIsOpen(false);
+    setCountryCoordinates(coords => ({
+      ...coords,
+      lat: country.latlng[0],
+      long: country.latlng[1],
+    }));
   };
 
   return (
