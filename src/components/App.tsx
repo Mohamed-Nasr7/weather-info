@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className='app'>
       <CountriesDropdown setCountryCoordinates={setCountryCoordinates} />
-      <WeatherInfo />
+      <WeatherInfo countryCoordinates={countryCoordinates} />
     </div>
   );
 };
