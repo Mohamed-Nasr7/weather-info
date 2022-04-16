@@ -1,6 +1,8 @@
-import React from 'react';
+type Props = {
+  countryCoordinates: { [key: string]: number };
+};
 
-const WeatherInfo = () => {
+const WeatherInfo = ({ countryCoordinates }: Props) => {
   return <div></div>;
 };
 
