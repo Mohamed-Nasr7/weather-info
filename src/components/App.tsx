@@ -6,7 +6,7 @@ const App = () => {
   const [countryCoordinates, setCountryCoordinates] = useState<object>({});
 
   return (
-    <div>
+    <div className='app'>
       <CountriesDropdown setCountryCoordinates={setCountryCoordinates} />
       <WeatherInfo />
     </div>
