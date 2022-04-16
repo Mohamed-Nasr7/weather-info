@@ -8,6 +8,7 @@ type Props = {
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const WeatherInfo = ({ countryCoordinates }: Props) => {
+  const URL = `${weatherUrl}?lat=${countryCoordinates.lat}&lon=${countryCoordinates.long}&appid=${apiKey}`;
   return <div></div>;
 };
 
