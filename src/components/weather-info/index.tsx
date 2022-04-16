@@ -1,3 +1,5 @@
+import { weatherUrl as url } from '../../constants/apis';
+
 type Props = {
   countryCoordinates: { [key: string]: number };
 };
