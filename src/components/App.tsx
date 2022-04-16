@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CountriesDropdown from './countries-dropdown';
 import WeatherInfo from './weather-info';
 
 const App = () => {
-  const [countryCoordinates, setCountryCoordinates] = useState<object>({});
+  const [countryCoordinates, setCountryCoordinates] = useState({});
 
   return (
     <div className='app'>
