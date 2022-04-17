@@ -15,7 +15,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
-  const countries = data as any[];
+  const countries = data as Country[];
 
   const selectCountry = (country: Country) => {
     setCountryName(country.name.common);
