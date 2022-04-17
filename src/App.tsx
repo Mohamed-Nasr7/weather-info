@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import CountryCoordinates from '../interfaces/CountryCoordinates';
-import CountriesDropdown from './countries-dropdown';
-import WeatherInfo from './weather-info';
+import CountryCoordinates from './interfaces/CountryCoordinates';
+import CountriesDropdown from './components/countries-dropdown';
+import WeatherInfo from './components/weather-info';
 
 const App = () => {
   const [countryCoordinates, setCountryCoordinates] = useState(
