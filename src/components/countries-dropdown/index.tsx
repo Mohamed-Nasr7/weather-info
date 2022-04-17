@@ -22,6 +22,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
 
   const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
     setIsOpen(isOpen => !isOpen);
+    e.stopPropagation();
   };
 
   const selectCountry = (country: Country) => {
