@@ -37,7 +37,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
       <button
         className='dropdown__button'
         disabled={isLoading}
-        onClick={() => setIsOpen(isOpen => !isOpen)}
+        onClick={openMenu}
       >
         {countryName || 'Select a country'}
       </button>
