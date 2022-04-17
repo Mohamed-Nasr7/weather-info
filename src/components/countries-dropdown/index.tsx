@@ -20,7 +20,9 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as Country[];
 
-  const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {};
+  const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setIsOpen(isOpen => !isOpen);
+  };
 
   const selectCountry = (country: Country) => {
     setCountryName(country.name.common);
