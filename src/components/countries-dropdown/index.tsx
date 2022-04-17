@@ -25,8 +25,8 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
     setIsOpen(false);
     setCountryCoordinates(coords => ({
       ...coords,
-      lat: country.latlng[0],
-      long: country.latlng[1],
+      latitude: country.latlng[0],
+      longitude: country.latlng[1],
     }));
   };
 
