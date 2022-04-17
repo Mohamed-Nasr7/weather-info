@@ -19,10 +19,10 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
       <div>
         <h2>{country.name} Weather</h2>
         <ul>
-          <li>{country.main.temp}</li>
-          <li>{country.main.pressure}</li>
-          <li>{country.main.humidity}</li>
-          <li>{country.wind.speed}</li>
+          <li>Temperature: {country.main.temp}</li>
+          <li>Pressure: {country.main.pressure}</li>
+          <li>Humidity: {country.main.humidity}</li>
+          <li>Wind speed: {country.wind.speed}</li>
         </ul>
       </div>
     )
