@@ -10,6 +10,8 @@ const useFetch = (url: string) => {
       try {
         setIsLoading(true);
         const response = await fetch(url);
+        if (!response.ok)
+          throw new Error('An error occured!! please try again.');
         const data = await response.json();
         setData(data);
       } catch {
