@@ -11,7 +11,9 @@ const App = () => {
   return (
     <div className='app'>
       <CountriesDropdown setCountryCoordinates={setCountryCoordinates} />
-      <WeatherInfo countryCoordinates={countryCoordinates} />
+      {countryCoordinates.latitude && (
+        <WeatherInfo countryCoordinates={countryCoordinates} />
+      )}
     </div>
   );
 };
