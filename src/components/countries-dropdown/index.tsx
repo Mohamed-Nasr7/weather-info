@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import useFetch from '../../hooks/useFetch';
+import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { countriesUrl } from '../../constants/apis';
 
 type Props = {
-  setCountryCoordinates: React.Dispatch<React.SetStateAction<object>>;
+  setCountryCoordinates: React.Dispatch<
+    React.SetStateAction<CountryCoordinates>
+  >;
 };
 type Country = {
   name: { common: string };
