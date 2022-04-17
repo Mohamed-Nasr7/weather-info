@@ -1,8 +1,9 @@
 import useFetch from '../../hooks/useFetch';
+import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { weatherUrl } from '../../constants/apis';
 
 type Props = {
-  countryCoordinates: { [key: string]: number };
+  countryCoordinates: CountryCoordinates;
 };
 
 const apiKey = process.env.REACT_APP_API_KEY;
