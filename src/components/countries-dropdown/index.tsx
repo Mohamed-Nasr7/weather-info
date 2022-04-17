@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { countriesUrl } from '../../constants/apis';
@@ -19,6 +19,8 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as Country[];
+
+  const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {};
 
   const selectCountry = (country: Country) => {
     setCountryName(country.name.common);
