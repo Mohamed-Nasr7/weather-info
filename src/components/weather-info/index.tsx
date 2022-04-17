@@ -16,12 +16,12 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
     <p>Loading.. </p>
   ) : (
     <div>
-      <h2>Weather</h2>
+      <h2>{country.name} Weather</h2>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>{country.main.temp}</li>
+        <li>{country.main.pressure}</li>
+        <li>{country.main.humidity}</li>
+        <li>{country.wind.speed}</li>
       </ul>
     </div>
   );
