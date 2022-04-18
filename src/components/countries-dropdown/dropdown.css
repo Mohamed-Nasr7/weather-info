@@ -7,4 +7,5 @@
   background-color: #a79bd0;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
+  display: flex;
 }
