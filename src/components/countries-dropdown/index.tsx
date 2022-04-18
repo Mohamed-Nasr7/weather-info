@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { countriesUrl } from '../../constants/apis';
-import './dropdown.css';
+import './style.css';
 
 type Props = {
   setCountryCoordinates: React.Dispatch<
