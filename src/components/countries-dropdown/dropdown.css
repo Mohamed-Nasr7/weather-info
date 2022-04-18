@@ -14,6 +14,12 @@
   font-size: 1.1rem;
   cursor: pointer;
 }
+.dropdown__button:hover,
+.dropdown__button:focus {
+  background-color: #9f8fd1;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
+}
+
 .dropdown__chevron {
   box-sizing: border-box;
   position: relative;
