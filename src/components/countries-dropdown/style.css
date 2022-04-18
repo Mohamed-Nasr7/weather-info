@@ -53,7 +53,7 @@
   list-style: none;
   padding: 0.6rem 0 0;
   border-radius: 4px;
-  box-shadow: 1px 1px 8px rgba(169, 169, 169, 0.473);
+  box-shadow: 1px 1px 10px rgba(140, 140, 140, 0.586);
 }
 
 .dropdown__menu li {
