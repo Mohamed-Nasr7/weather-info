@@ -13,7 +13,7 @@
   font-size: 1rem;
   cursor: pointer;
 }
-.chevron-down {
+.dropdown__chevron {
   box-sizing: border-box;
   position: relative;
   display: inline;
@@ -22,7 +22,7 @@
   border: 2px solid transparent;
   border-radius: 100px;
 }
-.chevron-down::after {
+.dropdown__chevron::after {
   content: '';
   display: block;
   box-sizing: border-box;

@@ -48,7 +48,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
         onClick={openMenu}
       >
         {countryName || 'Select a country'}
-        <span className='chevron-down'></span>
+        <span className='dropdown__chevron'></span>
       </button>
 
       {isOpen && data && (
