@@ -43,4 +43,6 @@
   max-width: 400px;
   overflow: auto;
   background-color: #fff;
+  list-style: none;
+  padding-left: 1rem;
 }
