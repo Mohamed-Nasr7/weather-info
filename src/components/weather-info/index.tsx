@@ -13,20 +13,24 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
   const { data, isLoading, error } = useFetch(URL);
   const country = data as { [key: string]: any };
 
-  return isLoading ? (
-    <p>Loading.. </p>
-  ) : (
-    data && (
-      <div>
-        <h2>{country.name} Weather</h2>
-        <ul>
-          <li>Temperature: {country.main.temp}</li>
-          <li>Pressure: {country.main.pressure}</li>
-          <li>Humidity: {country.main.humidity}</li>
-          <li>Wind speed: {country.wind.speed}</li>
-        </ul>
-      </div>
-    )
+  return (
+    <section>
+      {isLoading ? (
+        <p>Loading.. </p>
+      ) : (
+        data && (
+          <div>
+            <h2>{country.name} Weather</h2>
+            <ul>
+              <li>Temperature: {country.main.temp}</li>
+              <li>Pressure: {country.main.pressure}</li>
+              <li>Humidity: {country.main.humidity}</li>
+              <li>Wind speed: {country.wind.speed}</li>
+            </ul>
+          </div>
+        )
+      )}
+    </section>
   );
 };
 
