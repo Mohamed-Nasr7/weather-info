@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { countriesUrl } from '../../constants/apis';
@@ -20,6 +20,8 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const [countryName, setCountryName] = useState('');
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as Country[];
+
+  useLayoutEffect(() => {}, []);
 
   const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
     setIsOpen(isOpen => !isOpen);
