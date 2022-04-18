@@ -21,7 +21,9 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const { data, isLoading, error } = useFetch(countriesUrl);
   const countries = data as Country[];
 
-  useLayoutEffect(() => {}, []);
+  useLayoutEffect(() => {
+    document.addEventListener('click', () => setIsOpen(false));
+  }, []);
 
   const openMenu = (e: React.MouseEvent<HTMLButtonElement>) => {
     setIsOpen(isOpen => !isOpen);
