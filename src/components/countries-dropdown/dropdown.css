@@ -58,6 +58,7 @@
 
 .dropdown__menu li {
   padding: 1rem 0 1rem 1rem;
+  transition: all 0.3s;
 }
 .dropdown__menu li:hover {
   background-color: #d2c9ef6b;
