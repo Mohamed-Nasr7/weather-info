@@ -41,4 +41,6 @@
   width: 70%;
   min-width: 180px;
   max-width: 400px;
+  overflow: auto;
+  background-color: #fff;
 }
