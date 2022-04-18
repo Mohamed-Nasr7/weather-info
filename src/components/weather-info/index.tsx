@@ -15,14 +15,14 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
   const country = data as { [key: string]: any };
 
   return (
-    <section>
+    <section className='weatherInfo'>
       {isLoading ? (
         <p>Loading.. </p>
       ) : (
         data && (
-          <div>
-            <h2>{country.name} Weather</h2>
-            <ul>
+          <div className='weatherInfo__card'>
+            <h2 className='weatherInfo__title'>{country.name} Weather</h2>
+            <ul className='weatherInfo__list'>
               <li>Temperature: {country.main.temp}</li>
               <li>Pressure: {country.main.pressure}</li>
               <li>Humidity: {country.main.humidity}</li>
