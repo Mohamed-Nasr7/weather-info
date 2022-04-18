@@ -1,6 +1,7 @@
 import useFetch from '../../hooks/useFetch';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { weatherUrl } from '../../constants/apis';
+import './style.css';
 
 type Props = {
   countryCoordinates: CountryCoordinates;
