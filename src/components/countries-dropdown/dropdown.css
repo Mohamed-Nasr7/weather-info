@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1rem;
+  cursor: pointer;
 }
 .chevron-down {
   box-sizing: border-box;
