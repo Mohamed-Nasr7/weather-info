@@ -2,6 +2,7 @@ import useFetch from '../../hooks/useFetch';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { weatherUrl } from '../../constants/apis';
 import './style.css';
+import Spinner from '../spinner';
 
 type Props = {
   countryCoordinates: CountryCoordinates;
@@ -16,21 +17,23 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
 
   return (
     <section className='weatherInfo'>
-      {isLoading ? (
-        <p>Loading.. </p>
-      ) : (
-        data && (
-          <div className='weatherInfo__card'>
-            <h2 className='weatherInfo__title'>{country.name} Weather</h2>
-            <ul className='weatherInfo__list'>
-              <li>Temperature: {country.main.temp}</li>
-              <li>Pressure: {country.main.pressure}</li>
-              <li>Humidity: {country.main.humidity}</li>
-              <li>Wind speed: {country.wind.speed}</li>
-            </ul>
-          </div>
-        )
-      )}
+      <div className='weatherInfo__card'>
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          data && (
+            <>
+              <h2 className='weatherInfo__title'>{country.name} Weather</h2>
+              <ul className='weatherInfo__list'>
+                <li>Temperature: {country.main.temp}</li>
+                <li>Pressure: {country.main.pressure}</li>
+                <li>Humidity: {country.main.humidity}</li>
+                <li>Wind speed: {country.wind.speed}</li>
+              </ul>
+            </>
+          )
+        )}
+      </div>
     </section>
   );
 };
