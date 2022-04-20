@@ -1,5 +1,7 @@
 .dropdown__button {
   width: 60%;
+  max-width: 300px;
+  min-width: 180px;
   height: 2rem;
   padding: 1.8rem 1rem;
   border: 0;
