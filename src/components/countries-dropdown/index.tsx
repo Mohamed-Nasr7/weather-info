@@ -16,6 +16,7 @@ type Country = {
   cca3: string;
 };
 
+
 const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [countryName, setCountryName] = useState('');
@@ -57,6 +58,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
           ))}
         </ul>
       )}
+
       {isLoading && (
         <div className='page-loader'>
           <Spinner />

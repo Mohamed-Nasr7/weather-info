@@ -1,14 +1,15 @@
 import useFetch from '../../hooks/useFetch';
+import Spinner from '../spinner';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { weatherUrl } from '../../constants/apis';
 import './style.css';
-import Spinner from '../spinner';
 
 type Props = {
   countryCoordinates: CountryCoordinates;
 };
 
 const apiKey = process.env.REACT_APP_API_KEY;
+
 
 const WeatherInfo = ({ countryCoordinates }: Props) => {
   const URL = `${weatherUrl}?lat=${countryCoordinates.latitude}&lon=${countryCoordinates.longitude}&appid=${apiKey}`;
