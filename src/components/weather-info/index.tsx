@@ -25,10 +25,10 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
             <>
               <h2 className='weatherInfo__title'>{country.name} Weather</h2>
               <ul className='weatherInfo__list'>
-                <li>Temperature: {country.main.temp}</li>
-                <li>Pressure: {country.main.pressure}</li>
-                <li>Humidity: {country.main.humidity}</li>
-                <li>Wind speed: {country.wind.speed}</li>
+                <li> <b>Temperature:</b> {country.main.temp} </li>
+                <li><b>Pressure:</b> {country.main.pressure}</li>
+                <li><b>Humidity:</b> {country.main.humidity}</li>
+                <li><b>Wind speed:</b> {country.wind.speed}</li>
               </ul>
             </>
           )
