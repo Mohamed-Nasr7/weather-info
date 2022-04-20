@@ -12,3 +12,9 @@
   border-bottom: 2px solid;
   padding-bottom: 1rem;
 }
+
+.weatherInfo__list {
+  list-style: none;
+  padding-left: 0;
+}
+
