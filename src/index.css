@@ -16,6 +16,11 @@ body {
   grid-template-columns: 1.5fr 2fr;
   grid-gap: 40px;
 }
+@media (max-width: 860px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+}
 
 .page-loader {
   position: absolute;
