@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from 'react';
 import useFetch from '../../hooks/useFetch';
+import Spinner from '../spinner';
 import CountryCoordinates from '../../interfaces/CountryCoordinates';
 import { countriesUrl } from '../../constants/apis';
 import './style.css';
@@ -55,6 +56,11 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
             </li>
           ))}
         </ul>
+      )}
+      {isLoading && (
+        <div className='page-loader'>
+          <Spinner />
+        </div>
       )}
     </div>
   );
