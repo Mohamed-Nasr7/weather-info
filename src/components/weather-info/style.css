@@ -23,5 +23,7 @@
   text-align: center;
 }
 
-
+.weatherInfo__list li:not(:last-child) {
+  border-bottom: 1px solid rgba(180, 180, 180, 0.436);
+}
 
