@@ -34,6 +34,7 @@ const WeatherInfo = ({ countryCoordinates }: Props) => {
           )
         )}
       </div>
+      {error && <p>{error}</p>}
     </section>
   );
 };

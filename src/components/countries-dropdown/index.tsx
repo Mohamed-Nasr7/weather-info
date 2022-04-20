@@ -62,6 +62,7 @@ const CountriesDropdown = ({ setCountryCoordinates }: Props) => {
           <Spinner />
         </div>
       )}
+      {error && <p>{error}</p>}
     </div>
   );
 };
