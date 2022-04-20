@@ -18,3 +18,10 @@
   padding-left: 0;
 }
 
+.weatherInfo__list li {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+
+
